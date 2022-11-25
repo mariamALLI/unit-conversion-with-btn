@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111827;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container {
+    width: 600px;
+    height: 730px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.up_sec {
+    background-color: #FB7185;
+    color: #fff;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    height: 290px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.input_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.input_num {
+    width: 118px;
+    height: 87px;
+    background: transparent;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.input_btn button {
+    min-width: 130px;
+    height: 40px;
+    color: #212529;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    background: #fff;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .input_btn button:hover {
+    background-color: #FECDD3;
+  }
+  .input_btn button:active {
+    top: 2px;
+  }
+
+.down_sec {
+    background-color: #1F2937;
+    padding: 2rem 1rem;
+    color: #fff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.down_sec h2 {
+    color: #FECDD3;
+}
+
+.length, .volume, .mass {
+    background-color: #273549;
+    padding: 10px 25px;
+    text-align: center;
+    margin: 0 auto;
+    width: 500px;
+    height: 110px;
+}
+
+#lngth, #volm, #maSS {
+    margin-bottom: 20px;
+}
+
+#meter_feet, #vol, #mass {
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width:600px) {
+     #container {
+        width: 100%;
+        height: 70vh;
+     }
+
+     .up_sec h1 {
+        font-size: 1.3rem;
+     }
+
+     .input_num {
+        height: 50px;
+        font-size: 2rem;
+     }
+
+     .down_sec h2 {
+        font-size: 1rem;
+     }
+
+     .length, .volume, .mass {
+        width: 90%;
+     }
+
+     #meter_feet, #vol, #mass {
+        font-size: 0.8em;
+     }
+
+}
